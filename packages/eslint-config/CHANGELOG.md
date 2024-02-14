@@ -1,5 +1,18 @@
 # @wooden-script/eslint-config
 
+## 1.0.2
+
+### Patch Changes
+
+- 990571a: ## [1.0.1] - 2024-02-14
+
+  ### Translation of comments on reademe.md
+
+  ### Added
+
+  - **README**
+  - Translation of comment about prettier configs
+
 ## 1.0.1
 
 ### Patch Changes
