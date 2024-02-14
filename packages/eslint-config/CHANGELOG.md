@@ -1,5 +1,19 @@
 # @wooden-script/eslint-config
 
+## 1.0.3
+
+### Patch Changes
+
+- aaa8216: - 2024-02-14
+
+  ### repository and homepage configuration in package.json file
+
+  ### Added
+
+  - **package.json**
+  - Repository url
+  - homepage url
+
 ## 1.0.2
 
 ### Patch Changes
