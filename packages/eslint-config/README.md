@@ -69,7 +69,7 @@ You can customize Prettier settings through the `prettier/prettier` ESLint rule.
         "trailingComma": "all",
         "arrowParens": "always",
         "endOfLine": "auto"
-        // Adicione mais configurações do Prettier conforme necessário
+        <!-- Add more Prettier settings as needed -->
       }
     ]
   }
@@ -88,7 +88,7 @@ Adjusting the order of imports can be done through the `simple-import-sort/impor
       "error",
       {
         "groups": [
-          // Customize your import groups as needed
+         <!--  Customize your import groups as needed -->
         ]
       }
     ]
@@ -103,8 +103,15 @@ You can also organize exports, although this option is not enabled by default. T
 ```json
 {
   "rules": {
-    "simple-import-sort/exports": "error"
-    // Customize export sorting rules if necessary
+    "simple-import-sort/exports":
+    [
+      "error",
+      {
+        "groups": [
+          <!-- Customize export sorting rules if necessary -->
+        ]
+      }
+    ]
   }
 }
 ```
