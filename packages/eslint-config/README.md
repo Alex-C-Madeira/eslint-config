@@ -1,9 +1,6 @@
-![Wooden Script - ESlint config](https://example.com/wooden-script-logo.png)
+![Wooden Script - ESlint config](https://raw.githubusercontent.com/alexmadeira/config-files/main/packages/eslint-config/assets/wooden-script_eslint-config.png)
 
-# Wooden Script ESLint config
-
-## What's included?:
-
+## 📋 What's included?
 - Standard config base
 - React plugin
 - React Hooks plugin
@@ -11,28 +8,28 @@
 - Prettier
 - Import/Export Sort
 
-## Status badges
+## 🎖️ Status badges
 
-- ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/alexmadeira/config-file/release.yml?style=flat-square&logo=github)
-- ![NPM Version](https://img.shields.io/npm/v/%40types%2Fnode?style=flat-square)
-- ![NPM License](https://img.shields.io/npm/l/eslint?style=flat-square)
-- ![GitHub Release Date](https://img.shields.io/github/release-date/alexmadeira/config-file)
+![Version, Release and Publish](https://github.com/alexmadeira/config-files/actions/workflows/release.yml/badge.svg) ![GitHub Release Date](https://img.shields.io/github/release-date/alexmadeira/config-files)
+![NPM Version](https://img.shields.io/npm/v/%40wooden-script%2Feslint-config?style=flat-square) ![NPM License](https://img.shields.io/npm/l/%40wooden-script%2Feslint-config?style=flat-square)
 
-## Required Packages
+## 📦 Required Packages
 
 Make sure to have the following packages installed in your project to ensure proper functionality:
+- ![Required ESlint](https://img.shields.io/badge/Required-3A69C5?style=flat-square&logo=npm&label=Npm)
+   - [`eslint`](https://www.npmjs.com/package/eslint): ESLint is a linting tool for identifying and reporting patterns in JavaScript and TypeScript code.
 
-- [`eslint`](https://www.npmjs.com/package/eslint): ESLint is a linting tool for identifying and reporting patterns in JavaScript and TypeScript code. ![Required ESlint](https://img.shields.io/badge/Required-3A69C5?style=for-the-badge&logo=npm&label=Npm&cacheSeconds=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Feslint)
-- [`eslint_d`](https://www.npmjs.com/package/eslint_d): If your development environment reads the result from `stdout`, installing `eslint_d` can provide faster linting performance. ![Optional eslint_d](https://img.shields.io/badge/Optional-3AD35ABF?style=for-the-badge&logo=npm&label=Npm&cacheSeconds=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Feslint_d)
-- [`typescript`](https://www.npmjs.com/package/typescript): TypeScript is a superset of JavaScript that adds static types to the language and is essential for TypeScript projects. ![Optional TypeScript](https://img.shields.io/badge/Optional-3AD35ABF?style=for-the-badge&logo=npm&label=Npm&cacheSeconds=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Ftypescript)
+- ![Optional eslint_d](https://img.shields.io/badge/Optional-3AD35ABF?style=flat-square&logo=npm&label=Npm)
+    - [`eslint_d`](https://www.npmjs.com/package/eslint_d): If your development environment reads the result from `stdout`, installing `eslint_d` can provide faster linting performance.
+    - [`typescript`](https://www.npmjs.com/package/typescript): TypeScript is a superset of JavaScript that adds static types to the language and is essential for TypeScript projects.
 
-## Installation
+## 🛠️ Installation
 
-- yarn: `yarn add @wooden-script/eslint-config --dev`
 - npm: `npm install @wooden-script/eslint-config --save-dev`
+- yarn: `yarn add @wooden-script/eslint-config --dev`
 - pnpm: `pnpm add @wooden-script/eslint-config --save-dev`
 
-## Setup
+## 🧱 Setup
 
 After the installation process, you should create an ESLint configuration file in the root of your project. This file can be named `.eslintrc.js`, `.eslintrc.json`, or any other format accepted by ESLint. For more information, refer to [ESLint Configuration Files](https://eslint.org/docs/latest/use/configure/configuration-files).
 Inside the configuration file, add the following content based on your project type:
@@ -54,11 +51,11 @@ For `Node.js` projects (with or without TypeScript), use:
 
 These configurations will be effective once added to your ESLint configuration file.
 
-## Customizing/Override configuration
+## 🪛 Customizing/Override configuration
 
 Customizing Wooden Script ESLint configuration allows you to tailor the linting rules to fit your project's specific needs. Here are two notable customization options:
 
-### Configure Prettier Settings
+### ⚙️ Configure Prettier Settings
 You can customize Prettier settings through the `prettier/prettier` ESLint rule. Adjust the configuration in your `.eslintrc.json` file as follows:
 
 ```json
@@ -81,7 +78,7 @@ You can customize Prettier settings through the `prettier/prettier` ESLint rule.
 
 For more details, refer to the [eslint-plugin-prettier documentation](https://www.npmjs.com/package/eslint-plugin-prettier).
 
-### Customize Import Sorting Order
+### ⚙️ Customize Import Sorting Order
 Adjusting the order of imports can be done through the `simple-import-sort/imports` ESLint rule. Modify the configuration in your `.eslintrc.json` file:
 
 ```json
@@ -100,7 +97,7 @@ Adjusting the order of imports can be done through the `simple-import-sort/impor
 
 ```
 
-### Organize Exports
+### ⚙️ Organize Exports
 You can also organize exports, although this option is not enabled by default. This can be achieved through the `simple-import-sort/exports` ESLint rule. To use this feature, modify your `.eslintrc.json` file:
 
 ```json
@@ -116,11 +113,11 @@ For more information, consult the [eslint-plugin-simple-import-sort documentatio
 
 Feel free to explore these options to align the ESLint configuration with your project's coding standards and preferences.
 
-## Why?
+## 🤔 Why?
 
 Wooden Script ESLint config provides a standardized set of rules for maintaining consistent and high-quality code. It includes configurations for both Node.js and React projects, ensuring best practices and code quality across different environments.
 
-## Compatibility
+## 🔩 Compatibility
 
 The Wooden Script ESLint configuration is compatible with the following versions:
 
@@ -141,10 +138,10 @@ The Wooden Script ESLint configuration is compatible with the following versions
 - eslint-plugin-simple-import-sort: ^12.0.0
 - prettier: ^3.2.5
 
-## Our Related Projects
+## 🔗 Our Related Projects
 
 - [ts-config](https://www.npmjs.com/package/@wooden-script/ts-config)
 
-## License
+## 👨🏾‍⚖️ License
 
 This project is licensed under the MIT License. ©[Alex Madeira](https://github.com/alexmadeira).

@@ -1,6 +1,6 @@
 {
   "name": "@wooden-script/eslint-config",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": false,
   "license": "MIT",
   "author": "Alex Madeira <alex.c.madeira@gmail.com>",
