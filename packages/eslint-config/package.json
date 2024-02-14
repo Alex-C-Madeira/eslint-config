@@ -5,8 +5,8 @@
   "license": "MIT",
   "author": "Alex Madeira <alex.c.madeira@gmail.com>",
   "description": "Wooden Script ESLint Config simplifies the task of maintaining clean and consistent code in your JavaScript and TypeScript projects. Tailored by Alex Madeira, it offers straightforward configurations for React and Node.js applications. Integrated with Prettier, this ESLint setup ensures code adheres to standards while maintaining a neatly formatted codebase.",
-  "repository": "phosphor-icons/phosphor-react",
-  "homepage": "",
+  "repository": "alexmadeira/config-files",
+  "homepage": "https://github.com/alexmadeira/config-files/tree/main/packages/eslint-config",
   "keywords": [
     "eslint",
     "config",
