@@ -1,0 +1,8 @@
+.eslintrc.json
+.eslintrc.js
+.eslintrc.ts
+
+packages/**/*.js
+packages/**/coverage/*
+node_modules
+dist

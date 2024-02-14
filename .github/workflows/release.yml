@@ -1,0 +1,49 @@
+name: Version, Release and Publish
+concurrency: main
+on:
+  push:
+    branches:
+      - main
+jobs:
+  version-release-and-publish:
+    runs-on: ubuntu-latest
+    env:
+      HUSKY: 0
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: pnpm/action-setup@v2
+        with:
+          node-version: 20
+          version: 8
+
+      - name: Use Node LTS ✨
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org
+          scope: "@wooden-script"
+          cache: pnpm
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Install dependencies 📦️
+        run: |
+          pnpm install --frozen-lockfile
+
+      - name: Update Version 📝
+        id: version
+        run: pnpm changeset:version 2>&1 | grep -q 'No unreleased changesets found' && echo "changes=false" >> "$GITHUB_OUTPUT" || echo "changes=true" >> "$GITHUB_OUTPUT"
+
+      - name: NPM Publish 🎉
+        if: steps.version.outputs.changes == 'true'
+        id: npm-publish
+        uses: changesets/action@v1
+        with:
+          publish: pnpm changeset:release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
