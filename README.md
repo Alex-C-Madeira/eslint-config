@@ -1,4 +1,4 @@
-![Wooden Script - ESlint config](https://raw.githubusercontent.com/alexmadeira/config-files/main/eslint-config/assets/wooden-script_eslint-config.png)
+![Wooden Script - ESlint config](https://github.com/Alex-C-Madeira/eslint-config/blob/v2/assets/wooden-script_eslint-config.png)
 
 ## 📋 What's included?
 - Standard config base
