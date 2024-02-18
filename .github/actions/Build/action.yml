@@ -1,0 +1,30 @@
+name: "Build"
+description: "Install dependencies and Build project"
+inputs:
+  npmToken:
+    description: "token from npm publish account"
+    default: ""
+  npmScope:
+    description: "Scope of npm project"
+    default: ""
+
+runs:
+  using: composite
+  steps:
+    - uses: pnpm/action-setup@v2
+      id: pnpm-setup
+      with:
+        node-version: 20
+        version: 8
+
+    - name: Use Node
+      id: node-setup
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+
+    - name: Install dependencies
+      id: install-dependencies
+      shell: bash
+      run: |
+        pnpm install --frozen-lockfile

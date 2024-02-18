@@ -1,0 +1,23 @@
+name: "Nebula: Publish Release"
+description: "Publish New release to NPM and Update Changelog"
+inputs:
+  token:
+    description: "Personal access token"
+    required: true
+  npmToken:
+    description: "NPM Publish Token"
+
+runs:
+  using: composite
+  steps:
+    - name: "Nebula: Semantic Release 📝"
+      id: npm-publish
+      shell: bash
+      env:
+        GITHUB_TOKEN: ${{ inputs.token }}
+        NPM_TOKEN: ${{ inputs.npmToken }}
+        GIT_AUTHOR_NAME: "@NebulaSync"
+        GIT_AUTHOR_EMAIL: "nebulasync1.0.0@gmail.com"
+        GIT_COMMITTER_NAME: "@NebulaSync"
+        GIT_COMMITTER_EMAIL: "nebulasync1.0.0@gmail.com"
+      run: npx semantic-release

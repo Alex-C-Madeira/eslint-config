@@ -10,18 +10,21 @@ module.exports = {
   },
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
   },
-  plugins: [ 'react', 'jsx-a11y' ],
+  plugins: ['react', 'jsx-a11y'],
   rules: {
     'react/self-closing-comp': 'error',
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
-    'jsx-a11y/alt-text': ['warn', {
-      elements: ['img'],
-      img: ['Image'],
-    }],
+    'jsx-a11y/alt-text': [
+      'warn',
+      {
+        elements: ['img'],
+        img: ['Image'],
+      },
+    ],
     'jsx-a11y/aria-props': 'warn',
     'jsx-a11y/aria-proptypes': 'warn',
     'jsx-a11y/aria-unsupported-elements': 'warn',
@@ -33,5 +36,5 @@ module.exports = {
     react: {
       version: 'detect',
     },
-  }
+  },
 }
