@@ -8,7 +8,7 @@
       "@semantic-release/changelog",
       {
         "changelogFile": "./CHANGELOG.md",
-        "changelogTitle": "Wooden Script - ESlint Config"
+        "changelogTitle": "# Wooden Script - ESlint Config"
       }
     ],
     [
