@@ -23,7 +23,7 @@ jobs:
         uses: ./.github/actions/Build
 
       - name: 💽 Nebula Publish Release
-        id: build
+        id: nebula-publish-release
         uses: ./.github/actions/NebulaPublish
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
