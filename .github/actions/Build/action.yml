@@ -27,4 +27,4 @@ runs:
       id: install-dependencies
       shell: bash
       run: |
-        pnpm install --frozen-lockfile
+        pnpm install --no-frozen-lockfile
