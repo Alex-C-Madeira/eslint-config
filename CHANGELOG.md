@@ -1,5 +1,13 @@
 # Wooden Script - ESlint Config
 
+## [1.0.5](https://github.com/Alex-C-Madeira/eslint-config/compare/v1.0.4...v1.0.5) (2025-01-15)
+
+
+### Bug Fixes
+
+* --no-frozen-lockfile ([64e5288](https://github.com/Alex-C-Madeira/eslint-config/commit/64e528880b01ff106767068779f1e554138fc83f))
+* add `.npmrc`, `.nvmrc` and fix packages version ([0be2196](https://github.com/Alex-C-Madeira/eslint-config/commit/0be219682f228e217234599d37fb64571ed2a20f))
+
 ## [1.0.4](https://github.com/Alex-C-Madeira/eslint-config/compare/v1.0.3...v1.0.4) (2024-02-18)
 
 
