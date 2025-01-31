@@ -1,5 +1,12 @@
 # Wooden Script - ESlint Config
 
+## [1.1.3](https://github.com/Alex-C-Madeira/eslint-config/compare/v1.1.2...v1.1.3) (2025-01-31)
+
+
+### Bug Fixes
+
+* update types ([695f429](https://github.com/Alex-C-Madeira/eslint-config/commit/695f429af8d9960deb63df6954121df1009f23c3))
+
 ## [1.1.2](https://github.com/Alex-C-Madeira/eslint-config/compare/v1.1.1...v1.1.2) (2025-01-31)
 
 
