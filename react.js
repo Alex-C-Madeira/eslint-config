@@ -1,3 +1,5 @@
+const { react } = require("./config");
+
 module.exports = {
   extends: [
     './base.js',
@@ -15,22 +17,7 @@ module.exports = {
   },
   plugins: ['react', 'jsx-a11y'],
   rules: {
-    'react/self-closing-comp': 'error',
-    'react/react-in-jsx-scope': 'off',
-    'react/prop-types': 'off',
-    'jsx-a11y/alt-text': [
-      'warn',
-      {
-        elements: ['img'],
-        img: ['Image'],
-      },
-    ],
-    'jsx-a11y/aria-props': 'warn',
-    'jsx-a11y/aria-proptypes': 'warn',
-    'jsx-a11y/aria-unsupported-elements': 'warn',
-    'jsx-a11y/role-has-required-aria-props': 'warn',
-    'jsx-a11y/role-supports-aria-props': 'warn',
-    'react/no-unknown-property': 'error',
+    ...react.defaultRule,
   },
   settings: {
     react: {
