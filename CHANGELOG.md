@@ -1,5 +1,12 @@
 # Wooden Script - ESlint Config
 
+## [1.1.2](https://github.com/Alex-C-Madeira/eslint-config/compare/v1.1.1...v1.1.2) (2025-01-31)
+
+
+### Bug Fixes
+
+* add `typescript definitions` ([5ddc241](https://github.com/Alex-C-Madeira/eslint-config/commit/5ddc241908f7a7128a65c98785f2bcd435abd61c))
+
 ## [1.1.1](https://github.com/Alex-C-Madeira/eslint-config/compare/v1.1.0...v1.1.1) (2025-01-31)
 
 
