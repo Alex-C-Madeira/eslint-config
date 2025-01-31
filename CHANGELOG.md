@@ -1,5 +1,12 @@
 # Wooden Script - ESlint Config
 
+## [1.1.1](https://github.com/Alex-C-Madeira/eslint-config/compare/v1.1.0...v1.1.1) (2025-01-31)
+
+
+### Bug Fixes
+
+* restore `pre-commit eslint check` ([f1770c6](https://github.com/Alex-C-Madeira/eslint-config/commit/f1770c64e4961993bae5b2b876cf8e80fc2f9645))
+
 # [1.1.0](https://github.com/Alex-C-Madeira/eslint-config/compare/v1.0.5...v1.1.0) (2025-01-31)
 
 
