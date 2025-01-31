@@ -5,14 +5,14 @@ const defaultOptions = {
   trailingComma: 'all',
   arrowParens: 'always',
   semi: false,
-  endOfLine: 'auto',
+  endOfLine: 'auto'
 }
 
 const defaultRule = {
-  'prettier/prettier': ['error', defaultOptions],
+  'prettier/prettier': ['error', defaultOptions]
 }
 
 module.exports = {
   defaultRule,
-  defaultOptions,
+  defaultOptions
 }

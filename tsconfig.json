@@ -12,6 +12,7 @@
     "./react.js",
     "./node.js",
     "./base.js",
-    "./config.js"
+    "./config.js",
+    "./types"
   ]
 }

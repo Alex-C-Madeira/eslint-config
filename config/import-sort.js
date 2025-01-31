@@ -34,19 +34,19 @@ const defaultGroups = [
 
   /* ---------------Style imports */
   ['^.+\\.s?css$'],
-  ['^\\./styles$'],
+  ['^\\./styles$']
 ]
 
 const defaultOptions = {
-  groups: defaultGroups,
+  groups: defaultGroups
 }
 
 const defaultRule = {
-  'simple-import-sort/imports': ['error', defaultOptions],
+  'simple-import-sort/imports': ['error', defaultOptions]
 }
 
 module.exports = {
   defaultRule,
   defaultGroups,
-  defaultOptions,
+  defaultOptions
 }

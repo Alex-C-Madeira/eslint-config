@@ -12,11 +12,11 @@ const defaultRule = {
     'warn',
     {
       elements: ['img'],
-      img: ['Image'],
-    },
-  ],
+      img: ['Image']
+    }
+  ]
 }
 
 module.exports = {
-  defaultRule,
+  defaultRule
 }
