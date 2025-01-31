@@ -23,7 +23,13 @@
     "registry": "https://registry.npmjs.org"
   },
   "scripts": {
-    "prepare": "husky"
+    "prepare": "husky",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
   },
   "config": {
     "commitizen": {

@@ -42,7 +42,7 @@ const defaultOptions = {
 }
 
 const defaultRule = {
-  'simple-import-sort/imports': ['error', defaultGroups],
+  'simple-import-sort/imports': ['error', defaultOptions],
 }
 
 module.exports = {
