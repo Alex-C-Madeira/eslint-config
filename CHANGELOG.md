@@ -1,5 +1,12 @@
 # Wooden Script - ESlint Config
 
+# [1.1.0](https://github.com/Alex-C-Madeira/eslint-config/compare/v1.0.5...v1.1.0) (2025-01-31)
+
+
+### Features
+
+* export default `config` ([7e05f4c](https://github.com/Alex-C-Madeira/eslint-config/commit/7e05f4c9fd19989ff038c1172c245a0b4268b147))
+
 ## [1.0.5](https://github.com/Alex-C-Madeira/eslint-config/compare/v1.0.4...v1.0.5) (2025-01-15)
 
 
