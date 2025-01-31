@@ -1,27 +1,27 @@
-const { react } = require("./config");
+const { react } = require('./config')
 
 module.exports = {
   extends: [
     './base.js',
     'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
+    'plugin:react-hooks/recommended'
   ],
   env: {
     browser: true,
-    jest: true,
+    jest: true
   },
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
-    },
+      jsx: true
+    }
   },
   plugins: ['react', 'jsx-a11y'],
   rules: {
-    ...react.defaultRule,
+    ...react.defaultRule
   },
   settings: {
     react: {
-      version: 'detect',
-    },
-  },
+      version: 'detect'
+    }
+  }
 }

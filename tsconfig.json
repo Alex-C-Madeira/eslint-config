@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationMap": true,
+    "outDir": "types"
+  },
+  "include": [
+    "./react.js",
+    "./node.js",
+    "./base.js",
+    "./config.js"
+  ]
+}
