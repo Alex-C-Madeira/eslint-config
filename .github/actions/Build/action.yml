@@ -11,20 +11,35 @@ inputs:
 runs:
   using: composite
   steps:
-    - uses: pnpm/action-setup@v2
+    - uses: pnpm/action-setup@v4
       id: pnpm-setup
       with:
-        node-version: 20
-        version: 8
+        version: 10
 
     - name: Use Node
       id: node-setup
       uses: actions/setup-node@v4
       with:
-        node-version: 20
+        node-version: 22
+        cache: pnpm
 
     - name: Install dependencies
       id: install-dependencies
       shell: bash
       run: |
-        pnpm install --no-frozen-lockfile
+        pnpm install --frozen-lockfile
+
+    - name: Typecheck
+      id: typecheck
+      shell: bash
+      run: pnpm run typecheck
+
+    - name: Lint
+      id: lint
+      shell: bash
+      run: pnpm run lint
+
+    - name: Check package
+      id: pack-check
+      shell: bash
+      run: pnpm run pack:check
