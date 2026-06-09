@@ -4,6 +4,13 @@ on:
   push:
     branches:
       - main
+
+permissions:
+  contents: write
+  id-token: write
+  issues: write
+  pull-requests: write
+
 jobs:
   version-release-and-publish:
     runs-on: ubuntu-latest
@@ -27,4 +34,3 @@ jobs:
         uses: ./.github/actions/NebulaPublish
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          npmToken: ${{ secrets.NPM_TOKEN }}
