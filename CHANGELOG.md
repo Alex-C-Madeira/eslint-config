@@ -1,5 +1,17 @@
 # Wooden Script - ESlint Config
 
+# [2.0.0](https://github.com/Alex-C-Madeira/eslint-config/compare/v1.1.3...v2.0.0) (2026-06-09)
+
+
+* feat!: migrate package to ESLint 10 flat config ([0ab9f56](https://github.com/Alex-C-Madeira/eslint-config/commit/0ab9f566f27e9c32ddbdda27d4f4ac7bf8838de2))
+
+
+### BREAKING CHANGES
+
+* remove ESLint 8 and legacy eslintrc support.
+
+Consumers must use ESLint 10 flat config imports.
+
 ## [1.1.3](https://github.com/Alex-C-Madeira/eslint-config/compare/v1.1.2...v1.1.3) (2025-01-31)
 
 
