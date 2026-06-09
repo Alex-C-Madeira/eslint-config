@@ -1,5 +1,5 @@
-declare let _extends: string[];
-export { _extends as extends };
-export declare namespace env {
-    let node: boolean;
-}
+import { Linter } from 'eslint'
+
+declare const config: Linter.Config[]
+
+export default config

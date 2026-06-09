@@ -1,27 +1,41 @@
-const { react } = require('./config')
+import eslintReact from '@eslint-react/eslint-plugin'
+import jsxA11y from 'eslint-plugin-jsx-a11y-x'
+import reactHooks from 'eslint-plugin-react-hooks'
 
-module.exports = {
-  extends: [
-    './base.js',
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended'
-  ],
-  env: {
-    browser: true,
-    jest: true
+import base from './base.js'
+import { prettier, react } from './config.js'
+
+const baseWithoutPrettier = base.filter(
+  (config) => !('name' in config) || config.name !== 'wooden-script/prettier',
+)
+
+const reactRecommended = eslintReact.configs.recommended
+const reactHooksRecommended =
+  reactHooks.configs.flat?.recommended ?? reactHooks.configs.recommended
+const jsxA11yRecommended = jsxA11y.configs.recommended
+
+export default [
+  ...baseWithoutPrettier,
+  reactRecommended,
+  reactHooksRecommended,
+  jsxA11yRecommended,
+  {
+    name: 'wooden-script/react',
+    languageOptions: {
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+    },
+    rules: {
+      ...react.defaultRule,
+    },
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
   },
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    }
-  },
-  plugins: ['react', 'jsx-a11y'],
-  rules: {
-    ...react.defaultRule
-  },
-  settings: {
-    react: {
-      version: 'detect'
-    }
-  }
-}
+  prettier.config,
+]

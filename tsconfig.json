@@ -1,18 +1,20 @@
 {
   "compilerOptions": {
-    "module": "CommonJS",
+    "module": "NodeNext",
     "allowJs": true,
     "checkJs": true,
-    "declaration": true,
-    "emitDeclarationOnly": true,
-    "declarationMap": true,
-    "outDir": "types"
+    "noEmit": true,
+    "target": "ES2022",
+    "moduleResolution": "NodeNext",
+    "types": ["node"]
   },
   "include": [
+    "./index.js",
     "./react.js",
     "./node.js",
     "./base.js",
     "./config.js",
-    "./types"
+    "./config/**/*.js",
+    "./types/vendor.d.ts"
   ]
 }

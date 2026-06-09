@@ -1,9 +1,5 @@
-const importSort = require('./config/import-sort')
-const prettier = require('./config/prettier')
-const react = require('./config/react')
+import * as importSort from './config/import-sort.js'
+import * as prettier from './config/prettier.js'
+import * as react from './config/react.js'
 
-module.exports = {
-  importSort,
-  prettier,
-  react
-}
+export { importSort, prettier, react }
