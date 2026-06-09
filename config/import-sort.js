@@ -1,52 +1,44 @@
-const defaultGroups = [
-  /* ---------------Types */
-  ['^.*\\u0000$'],
-  ['^@/'],
-  /* ---------------Tests */
-  ['^tests/', '^__tests/', '^__tests__/'],
-
-  /* ---------------Common modules */
-  ['^node:'],
-  ['^react'],
-  ['^styled-components'],
-  ['^next'],
-
-  /* ---------------Packages */
-  ['^@?\\w'],
-  ['^\\u0000'],
-
-  /* ---------------Docs */
-  ['^#/'],
-
-  /* ---------------Internal Folders */
-  ['^_UTL/'],
-  ['^_SRV/'],
-  ['^_STR/'],
-  ['^_MDL/'],
-  ['^_CTL/'],
-
-  /* ---------------SRC */
-  ['^~/'],
-
-  /* ---------------Parent Imports */
-  ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
-  ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
-
-  /* ---------------Style imports */
-  ['^.+\\.s?css$'],
-  ['^\\./styles$']
+export const defaultGroups = [
+  'type',
+  'builtin',
+  'external',
+  'internal',
+  ['parent', 'sibling', 'index'],
+  'side-effect',
+  'style',
+  'unknown',
 ]
 
-const defaultOptions = {
-  groups: defaultGroups
+export const defaultOptions = {
+  type: 'alphabetical',
+  order: 'asc',
+  newlinesBetween: 1,
+  groups: defaultGroups,
+  internalPattern: [
+    '^@/',
+    '^~/',
+    '^#/',
+    '^_UTL/',
+    '^_SRV/',
+    '^_STR/',
+    '^_MDL/',
+    '^_CTL/',
+  ],
 }
 
-const defaultRule = {
-  'simple-import-sort/imports': ['error', defaultOptions]
+export const defaultExportOptions = {
+  type: 'alphabetical',
+  order: 'asc',
+  newlinesBetween: 1,
 }
 
-module.exports = {
-  defaultRule,
-  defaultGroups,
-  defaultOptions
+export const defaultJsxPropsOptions = {
+  type: 'line-length',
+  order: 'asc',
+}
+
+export const defaultRule = {
+  'perfectionist/sort-imports': ['error', defaultOptions],
+  'perfectionist/sort-exports': ['error', defaultExportOptions],
+  'perfectionist/sort-jsx-props': ['error', defaultJsxPropsOptions],
 }
